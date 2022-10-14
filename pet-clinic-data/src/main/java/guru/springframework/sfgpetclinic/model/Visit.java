@@ -1,7 +1,15 @@
 package guru.springframework.sfgpetclinic.model;
 
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
 import javax.persistence.*;
 import java.time.LocalDate;
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@SuperBuilder
 @Entity
 @Table(name = "visits")
 public class Visit extends BaseEntity{
